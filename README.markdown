@@ -1,8 +1,15 @@
 # Aries Remote Service Admin Examples - OSGi Remote µServices
+[![SMC Tech Blog](https://img.shields.io/badge/Mainteiner-SMC%20Tech%20Blog-blue)](https://techblog.smc.it) [![Twitter Follow](https://img.shields.io/twitter/follow/SMCpartner.svg?style=social&label=%40SMCpartner%20on%20Twitter&style=plastic)](https://twitter.com/SMCpartner) 
 
 This project refers to the article What are OSGi Remote µServices published 
 on the SMC [TechBlog](https://techblog.smc.it) blog.
 
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to 
+discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
 
 ## License
 
