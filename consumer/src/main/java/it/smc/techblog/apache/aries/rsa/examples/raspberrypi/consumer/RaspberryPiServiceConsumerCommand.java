@@ -27,10 +27,10 @@ import java.text.ParseException;
 @Component(immediate = true,
 	property = {
 		"osgi.command.function=operatingSystemInfo",
-        "osgi.command.function=javaEnvironmentInfo",
-        "osgi.command.function=cpuInfo",
-        "osgi.command.function=cpuTemperature",
-        "osgi.command.function=networkInfo",
+		"osgi.command.function=javaEnvironmentInfo",
+		"osgi.command.function=cpuInfo",
+		"osgi.command.function=cpuTemperature",
+		"osgi.command.function=networkInfo",
 		"osgi.command.scope=rpi"
 	},
 	service = Object.class
@@ -41,13 +41,13 @@ public class RaspberryPiServiceConsumerCommand {
 		return _raspberryPiService.getCPUInfo();
 	}
 
-    public float cpuTemperature() throws IOException, InterruptedException {
+	public float cpuTemperature() throws IOException, InterruptedException {
 		return _raspberryPiService.getCPUTemperature();
 	}
 
-    public String networkInfo() throws IOException, InterruptedException {
-        return _raspberryPiService.getNetworkInfo();
-    }
+	public String networkInfo() throws IOException, InterruptedException {
+		return _raspberryPiService.getNetworkInfo();
+	}
 
 	public String operatingSystemInfo()
 		throws InterruptedException, ParseException, IOException {
@@ -58,6 +58,7 @@ public class RaspberryPiServiceConsumerCommand {
 		return _raspberryPiService.getJavaEnvironmentInfo();
 	}
 
-    @Reference
-    private RaspberryPiService _raspberryPiService;
+	@Reference
+	private RaspberryPiService _raspberryPiService;
+
 }
