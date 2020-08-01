@@ -1,9 +1,28 @@
-# Aries Remote Service Admin Examples - OSGi Remote µServices
+# Aries Remote Service Admin Examples - OSGi Remote µServices for Raspberry Pi
 [![SMC Tech Blog](https://img.shields.io/badge/Mainteiner-SMC%20Tech%20Blog-blue)](https://techblog.smc.it) [![Twitter Follow](https://img.shields.io/twitter/follow/SMCpartner.svg?style=social&label=%40SMCpartner%20on%20Twitter&style=plastic)](https://twitter.com/SMCpartner) 
 
 This project refers to the article What are OSGi Remote µServices published 
 on the SMC [TechBlog](https://techblog.smc.it) blog.
 
+In this project there are the three OSGi API, Consumer and Service bundles for 
+the Raspberry Pi service. Details are shown in the table.
+
+| Service              | Bundle Name           | Description                                                  |
+| -------------------- | --------------------- | ------------------------------------------------------------ |
+| Raspberry Pi Service | Raspberry Pi API      | Bundle that defines the Raspberry Pi service contract via the Java interface. The bundle exports the interface package. |
+|                      | Raspberry Pi Service  | Bundle that implements the interface of the Raspberry Pi service. The bundle imports the interface package. |
+|                      | Raspberry Pi Consumer | Bundle that consumes the Raspberry Pi service. The reference to the service is obtained transparently from the Service Registry. The bundle imports the interface package. |
+
+Table 1 - OSGi bundles that will implement the example scenario for Remote µServices
+
+
+## 1. Quick Start
+
+```bash
+$ git clone https://github.com/smclab/aries-rsa-raspberrypi-examples.git
+$ cd aries-rsa-raspberrypi-examples
+$ mvn package
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to 
