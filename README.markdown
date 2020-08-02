@@ -23,6 +23,13 @@ $ git clone https://github.com/smclab/aries-rsa-raspberrypi-examples.git
 $ cd aries-rsa-raspberrypi-examples
 $ mvn package
 ```
+In this terminal session you will see the clone of the repository and 
+compilation of the project. Next you will see the connection to the console of 
+Liferay and Apache Karaf from which I will execute commands to obtain 
+information about the Raspberry PI, all this is possible thanks to the call 
+to remote services (OSGi Remote µServices).
+
+[![asciicast](https://asciinema.org/a/351305.svg)](https://asciinema.org/a/351305?autoplay=1)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to 
